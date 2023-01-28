@@ -1,0 +1,73 @@
+{% extends "./base_gatos.html" %}
+
+{% block title %} Pagina Principal {% endblock %}
+
+{% block body %}
+{% load static %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-xs-12">
+            <img class="tamanoimg" src="{% static 'img/imagenes_gatos/kiki gato.webp' %}" alt="No Img">
+        </div>
+        <div class="col-lg-6 col-xs-12">
+            <table class="default tabla">
+                <tr>
+                    <th>Nombre</th>
+                    <td>Kiki</td>
+                </tr>
+    
+                <tr>
+                    <th>Sexo</th>
+                    <td>Hembra</td>
+                </tr>
+    
+                <tr>
+                    <th>Edad</th>
+                    <td>8 meses</td>
+                </tr>
+    
+                <tr>
+                    <th>Peso</th>
+                    <td>4 kg</td>
+                </tr>
+    
+                <tr>
+                    <th>Vacunas</th>
+                    <td>Al día</td>
+                </tr>
+    
+                <tr>
+                    <th>Raza</th>
+                    <td>Mestiza</td>
+                </tr>
+    
+                <tr>
+                    <th>Desparasitada</th>
+                    <td>Si</td>
+                </tr>
+    
+                <tr>
+                    <th>Esterelizada</th>
+                    <td>Si</td>
+                </tr>
+    
+                <tr>
+                    <th>Chip</th>
+                    <td>Si</td>
+                </tr>
+            </table>
+
+
+        </div>
+
+        
+    </div>
+
+
+
+</div>
+
+
+
+
+{% endblock %}

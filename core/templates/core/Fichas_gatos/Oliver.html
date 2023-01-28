@@ -1,0 +1,65 @@
+{% extends "./base_gatos.html" %}
+
+{% block title %} Pagina Principal {% endblock %}
+
+{% block body %}
+{% load static %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-xs-12" >
+            <img class="tamanoimg" src="{% static 'img/imagenes_gatos/gato oliver.jpg' %}" alt="No Img">
+        </div>
+        <div class="col-lg-6 col-xs-12">
+            <table class="default tabla">
+            <tr>
+                <th>Nombre</th>
+                <td>Oliver</td>
+            </tr>
+
+            <tr>
+                <th>Sexo</th>
+                <td>Macho</td>
+            </tr>
+
+            <tr>
+                <th>Edad</th>
+                <td>1 años</td>
+            </tr>
+
+            <tr>
+                <th>Peso</th>
+                <td>5 kg</td>
+            </tr>
+
+            <tr>
+                <th>Vacunas</th>
+                <td>Al día</td>
+            </tr>
+
+            <tr>
+                <th>Raza</th>
+                <td>Mestizo</td>
+            </tr>
+
+            <tr>
+                <th>Desparasitado</th>
+                <td>Si</td>
+            </tr>
+
+            <tr>
+                <th>Esterelizado</th>
+                <td>No</td>
+            </tr>
+            
+            <tr>
+                <th>Chip</th>
+                <td>Si</td>
+            </tr>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock %}

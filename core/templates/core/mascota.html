@@ -1,0 +1,48 @@
+{% extends "./base.html" %}
+
+{% block title %} Pagina Principal {% endblock %}
+
+{% block body %}
+{% load static %}
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-12 col-xs-12">
+                <h2 class="secciones"> Nuestras secciones de ayuda </h2>
+            </div>
+
+            <div class="col-lg-6 col-xs-12">
+                <div>
+                    <div class="contenedor">
+                        <figure>
+                            <img src="{% static 'img/img_gatos/gato-slide.jpg' %}">
+                            <div class="capa">
+                                <h3>GATITOS</h3>
+                                <a class="centrado" href="{% url 'pag_gatos' %}"> CLICK ACÁ </a>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-xs-12">
+                <div>
+                    <div class="contenedor2">
+                        <figure>
+                            <img src="{% static 'img/img_perros/cachorro-jack-russell_0.jpg' %}">
+                            <div class="capa">
+                                <h3>PERRITOS</h3>
+                                <a href="{% url 'pag_perros' %}"> CLICK ACÁ </a>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}

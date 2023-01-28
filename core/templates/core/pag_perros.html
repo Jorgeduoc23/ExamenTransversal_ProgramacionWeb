@@ -1,0 +1,103 @@
+{% extends "./base.html" %}
+
+{% block title %} Pagina Principal {% endblock %}
+
+{% block body %}
+{% load static %}
+<div class="grid-container">
+    <div class="container-fluid">
+        <div class="row">
+            <div p class="subtitulo">
+                <p>Listado de perritos en adopción</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <article class="location-listing">
+
+            <a class="location-title" href="{% url 'Fichas_perros/Celeste' %}">
+                Celeste </a>
+
+            <div class="location-image">
+                <a href="#">
+                    <img width="300" height="169" src="{% static 'img/img_perros/a.jpg' %}" alt="Celeste"> </a>
+
+            </div>
+
+        </article>
+
+        <article class="location-listing">
+
+            <a class="location-title" href="{% url 'Fichas_perros/Firulais' %}">
+                Firulais </a>
+
+            <div class="location-image">
+                <a href="#">
+                    <img width="300" height="169" src="{% static 'img/img_perros/a2.jpg' %}" alt="Firulais"> </a>
+
+            </div>
+
+        </article>
+
+        <article class="location-listing">
+
+            <a class="location-title" href="{% url 'Fichas_perros/Almendra' %}">
+                Almendra </a>
+
+            <div class="location-image">
+                <a href="#">
+                    <img width="300" height="169" src="{% static 'img/img_perros/a3.jpeg' %}" alt="Almendra"> </a>
+
+            </div>
+
+        </article>
+
+        <article class="location-listing">
+
+            <a class="location-title" href="{% url 'Fichas_perros/Abby' %}">
+                Abby </a>
+
+            <div class="location-image">
+                <a href="#">
+                    <img width="300" height="169" src="{% static 'img/img_perros/a4.jpeg' %}" alt="Abby"> </a>
+
+            </div>
+
+        </article>
+
+        <article class="location-listing">
+
+            <a class="location-title" href="{% url 'Fichas_perros/Bito' %}">
+                Bito </a>
+
+            <div class="location-image">
+                <a href="#">
+                    <img width="300" height="169" src="{% static 'img/img_perros/a5.jpg' %}" alt="Bito"> </a>
+
+            </div>
+
+        </article>
+
+        <article class="location-listing">
+
+            <a class="location-title" href="{% url 'Fichas_perros/Pedro' %}">
+                Pedro<br></a>
+
+            <div class="location-image">
+                <a href="#">
+                    <img width="300" height="169" src="{% static 'img/img_perros/a6.jpeg' %}" alt="Pedro">
+                </a>
+            </div>
+
+        </article>
+
+
+
+    </div>
+
+
+</div>
+
+
+{% endblock %}

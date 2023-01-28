@@ -1,0 +1,60 @@
+{% extends "./base_perros.html" %}
+
+{% block title %} Pagina Principal {% endblock %}
+
+{% block body %}
+{% load static %}
+<div class="container">
+    <div class="row row-cols-2">
+        <div class="col-lg-6">
+            <img class="tamanoimg" src="{% static 'img/img_perros/a4.jpeg' %}" alt="No Img">
+        </div>
+
+        <div class="col-lg-6">
+            <table class="default tabla">
+                <tr>
+                    <th>Nombre</th>
+                    <td>Abby</td>
+                </tr>
+
+                <tr>
+                    <th>Sexo</th>
+                    <td>Femenino</td>
+                </tr>
+
+                <tr>
+                    <th>Edad</th>
+                    <td>5 Meses</td>
+                </tr>
+
+                <tr>
+                    <th>Vacunas</th>
+                    <td>Todas al día</td>
+                </tr>
+
+                <tr>
+                    <th>Raza</th>
+                    <td>Mestizo</td>
+                </tr>
+
+                <tr>
+                    <th>Desparasitado</th>
+                    <td>Si</td>
+                </tr>
+
+                <tr>
+                    <th>Esterelizado</th>
+                    <td>No</td>
+                </tr>
+                
+                <tr>
+                    <th>N ° Chip</th>
+                    <td>502172931</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
