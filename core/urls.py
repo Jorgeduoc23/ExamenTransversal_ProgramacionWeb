@@ -7,6 +7,7 @@ urlpatterns = [
     path('contacto/', views.contacto,name='contacto'),
     path('pag_perros/', views.pag_perros,name='pag_perros'),
     path('pag_gatos/', views.pag_gatos,name='pag_gatos'),
+    path('agregar-mascota/', views.agregarmascota,name='agregar'),
 
     #path perros
     path('Fichas_perros/Abby', views.Abby,name='Fichas_perros/Abby'),

@@ -1,10 +1,17 @@
 from django.shortcuts import render
+from .models import Macota
+from .forms import MascotaForm
 
 # Create your views here.
 
 
 def home(request):
-    return render(request, "core/home.html")
+    mascotas =Macota.objects.all()
+    data={
+        'mascotas':mascotas
+    }
+
+    return render(request, "core/home.html" , data)
     
 
 
@@ -78,4 +85,19 @@ def Oliver(request):
 
 def Romeo(request):
     return render(request, "core/Fichas_gatos/Romeo.html")
+
+
+
+def agregarmascota(request):
+    data={
+        'form': MascotaForm()
+    }
+    if request.method =='POST':
+        formulario=MascotaForm(data=request.POST, files=request.FILES)
+        if formulario.is_valid():
+            formulario.save()
+            data["mensaje"] = "Guardado correctamente"
+        else:
+                data["form"] = formulario
+    return render(request, 'core/mascotas/agregar.html',data)
 

@@ -5,5 +5,38 @@
 {% block body %}
 {% load static %}
 
+<div id="contenido">
+    {% load humanize %}
+    <h2>Mascotas</h2>
+
+       
+    <div class="productos">
+        {% for m in mascotas %} 
+        <div class="producto">
+                       
+                <div class="container_producto">
+                    {% if m.imagen %}                    
+                    <a href="{% url 'Fichas_perros/Abby' %}">
+                        <img src="{{ m.imagen.url }}" alt="imagen producto">
+                    </a>
+                    {% endif %}
+                </div>
+                              
+                <div class="detalle">
+                    <h2>{{ m.nombre }}</h2>
+                    <h5>{{ m.sexo }}</h5>
+                    <h5>{{ m.edad }} años </h5>
+                    <h4>{{ m.raza }}</h4>
+                </div>            
+        </div>
+        {% endfor %}
+    </div>
+    
+
+
+</div>
+
+
+
 
 {% endblock %}
